@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String [] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Введите градусы в Фарингейтах: ");
+        double fahrenheit = input.nextDouble();
+        
+        //Конвертация Фаренгейтов в Цельсии
+        double celsius = (5.0 / 9) * (fahrenheit - 32);
+        System.out.println("Фаренгейт " + fahrenheit + " это "
+                + celsius + " в градусах Цельсия");
+    }
+}
